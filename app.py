@@ -57,8 +57,6 @@ def show_task(team_id, id):
 
 @app.route("/<team_id>/submit/<id>", methods=["GET","POST"])
 def submit_task(team_id, id):
-    if not game_running:
-        return redirect("/gameover")
     team_name = game1.teams[int(team_id)].name
     task_name = game1.tasks[int(id)].name
     
