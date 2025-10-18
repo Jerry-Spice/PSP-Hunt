@@ -1,0 +1,99 @@
+{
+    "tasks" : [
+        {
+            "name": "The Statue Challenge",
+            "points": 5,
+            "description": "Pose next to a statue in the same pose as the statue."
+        },
+        {
+            "name": "Hallway Olympics",
+            "points": 10,
+            "description": "Record your team doing 3 “events” (e.g., chair race, hallway long jump, synchronized paper toss)."
+        },
+        {
+            "name": "Shark Tank",
+            "points": 5,
+            "description": "Create a fake product and give a short pitch to potential investors"
+        },
+        {
+            "name": "Perry's Place",
+            "points": 5,
+            "description": "Impersonate Dr. Doofinschmirtz at Perry Hall"
+        },
+        {
+            "name": "Pyramid Scheme",
+            "points": 10,
+            "description": "Create a human pyramid (may require teamwork between 2 teams)"
+        },
+        {
+            "name": "2016",
+            "points": 10,
+            "description": "Land 5 water bottle flips in a row and dab after each success"
+        },
+        {
+            "name": "I've seen this one before!",
+            "points": 5,
+            "description": "Reenact a meme of your choice (e.g. spidermen pointing at each other, mewing, etc.)"
+        },
+        {
+            "name": "The Riddler",
+            "points": 5,
+            "description": "Tell me a riddle"
+        },
+        {
+            "name": "AI won't take my job!",
+            "points": 10,
+            "description": "Use ChatGPT to create some slam poetry (on a topic of your choice) and read it aloud dramatically."
+        },
+        {
+            "name": "Mr. Mime",
+            "points": 10,
+            "description": "Do a quick Mime routine"
+        },
+        {
+            "name": "I Spy.",
+            "points": 5,
+            "description": "Take a picture of another team without them noticing"
+        },
+        {
+            "name": "The Twighlight Zone",
+            "points": 5,
+            "description": "What if we were in France? Pretend to be in France."
+        },
+        {
+            "name": "Who's Unmarked Pavement?",
+            "points": 10,
+            "description": "Air Guitar with sound effects."
+        },
+        {
+            "name": "Boy Band",
+            "points": 10,
+            "description": "Pose like you're in a boy band."
+        },
+        {
+            "name": "Wordle",
+            "points": 5,
+            "description": "Solve today's wordle."
+        },
+        {
+            "name": "I'm the flash",
+            "points": 5,
+            "description": "Have a race in slow motion."
+        },
+        {
+            "name": "Agent S",
+            "points": 15,
+            "description": "What's the secret phrase to save Perry?"
+        },
+        {
+            "name": "The Truman Show",
+            "points": 5,
+            "description": "Narrate over a teammate doing some simple task. The narrator cannot be visible."
+        },
+        {
+            "name": "Invisible Dog",
+            "points": 10,
+            "description": "Pretend to walk an invisible dog. Loudly scold the dog for something. The dog's name is Shadow"
+        }
+    ]
+}

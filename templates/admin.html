@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>PSP Hunt Admin</title>
+        <link rel="stylesheet" href="{{ url_for( 'static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <h1>PSP Hunt</h1>
+        </div>
+        <div class="linkrow flex flexrow flexaround">
+            <a href="/">Home</a>
+            <a href="/scoreboard">Scoreboard</a>
+            <a href="/admin">Admin</a>
+        </div>
+        <div class="mainarea">
+            <div class="command">
+            <h1>Game is 
+                {% if game_running %}
+                <span class="greentext">Running!</span>
+                {% else %}
+                <span class="redtext">Stopped.</span>
+                {% endif %}
+            </h1>
+            <form action="/admin/verified/toggle_game" method="GET">
+                <button type="submit" >Toggle Game State</button>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>

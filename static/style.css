@@ -1,0 +1,340 @@
+body {
+  margin: 0px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 45px;
+}
+p  {
+  font-size: 30px;
+}
+
+ol {
+  font-size: 30px;
+}
+
+ul {
+  font-size: 30px;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.flexrow {
+  flex-direction: row;
+}
+
+.flexcenter {
+  justify-content: center;
+}
+
+.flexaround {
+  justify-content: space-around;
+}
+
+.flexbetween {
+  justify-content: space-between;
+}
+
+.flexstart {
+  justify-content: start;
+}
+
+.center {
+  text-align: center;
+}
+
+.flexcol {
+  flex-direction: column;
+  justify-content: start;
+}
+
+.font-50 {
+  font-size: 50px;
+}
+
+.disabled {
+  pointer-events: none;
+  color: grey;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.header {
+  background-color:indigo;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  border-bottom: 5px solid black;
+}
+
+.titleElement {
+  margin: 0px;
+}
+
+.mainarea {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.thumbnail {
+  width: 100px;
+}
+
+.signups {
+  border: 5px solid black;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 5px;
+  background-color: lavender;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signups a {
+  text-decoration: underline;
+  color: black;
+  font-style: italic;
+}
+
+.signups label {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.signups input {
+  font-size: 50px;
+  margin: 0.5vh 0;
+  border: solid black 3px;
+  border-radius: 10px;
+  overflow-wrap: break-word;
+}
+
+.weeks {
+  border: 5px solid black;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 5px;
+  background-color: khaki;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.teams {
+  border: 5px solid black;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 5px;
+}
+
+table {
+  border: 2px solid;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+th {
+  border: 2px solid;
+  border-collapse: collapse;
+  padding: 5px;
+  background-color: lightgray;
+  font-size: 30px;
+}
+
+td {
+  border: 2px solid;
+  border-collapse: collapse;
+  padding: 5px auto;
+  font-size: 25px;
+}
+
+.tablename {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 34px;
+}
+
+.directorycol {
+  margin: 5px;
+}
+
+.quicklinks {
+  background-color: darkcyan;
+  border-bottom: 5px solid;
+  font-size: 20px;
+  text-align: center;
+}
+
+.quicklinks p {
+  padding: 0px 20px;
+}
+
+.quicklinks p a {
+  color: white;
+}
+.directorycol ul {
+  padding: 2px;
+  margin: 20px;
+}
+
+.directorycol li {
+  font-size: 28px;
+  text-align: center;
+
+  list-style: none;
+}
+
+.directorycol li a {
+  font-style: italic;
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menucol {
+  border: solid 5px black;
+  width: 45vw;
+  padding: 0vh 1vw;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.nopadding {
+  padding: 0px;
+}
+
+.nomargin {
+  margin: 0px;
+}
+
+.tasks {
+  background-color:darkslateblue;
+  padding: 2vh 1vw;
+  color: white;
+  
+}
+
+.task {
+  border-top: black solid 5px;
+  margin: -5px 0;
+  border-bottom: black solid 5px;
+}
+
+.taskheader {
+  margin: 1vw 0vw;
+}
+
+.title {
+  padding: 0px 1vw;
+}
+
+.points {
+  padding: 0px 1vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.warning {
+  background-color:lightpink;
+  border: lightpink 5px solid;
+  border-radius: 10px;
+  color:darkred;
+}
+
+.tasklink {
+  color: blue;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.linkrow {
+  background-color:indigo;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  border-bottom: 5px solid black;
+  text-decoration: underline;
+  font-style:italic ;
+}
+
+.greentext {
+  color: green;
+  font-weight: bold;
+}
+
+.redtext {
+  color: red;
+  font-weight: bold;
+}
+
+.command {
+  border: 5px black solid;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.command button {
+  font-size: 45px;
+  background-color:indigo;
+  color: white;
+  border: indigo 5px solid;
+  border-radius: 10px;
+}
+
+.font-50 {
+  font-size: 50px;
+}
+
+input[type="file"] {
+            width: 100%;
+            height: 100px;
+            padding: 50px;
+            font-size: 50px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }

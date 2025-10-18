@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>PSP Hunt Admin</title>
+        <link rel="stylesheet" href="{{ url_for( 'static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <h1>PSP Hunt Scoreboard</h1>
+        </div>
+        <div class="linkrow flex flexrow flexaround">
+            <a href="/">Home</a>
+            <a href="/scoreboard">Scoreboard</a>
+            <a href="/admin">Admin</a>
+        </div>
+        <div class="mainarea">
+            {% if teams %}
+                <div class="flex flexrow flexcenter">
+                    <ol class="font-50">
+                        {% for team in teams %}
+                            <li>
+                                <h2>{{ team['name'] }} | {{ team['points'] }}</h2>
+                            </li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            {% endif %}
+        </div>
+        <script>
+            
+            function updateStandings() {
+                window.location.reload();
+            }
+
+            setInterval(updateStandings, 3000);
+
+        </script>
+    </body>
+</html>

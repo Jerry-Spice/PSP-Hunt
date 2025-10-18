@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>PSP Hunt</title>
+        <link rel="stylesheet" href="{{ url_for( 'static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Tasks</h1>
+            {% if team_points %}
+            <h1>{{ team_points }} Points</h1>
+            {% endif %}
+        </div>
+        <div class="mainarea">
+            {% if team_id %}
+                {% if tasks %}
+                    <div class="tasks">
+                        {% for task in tasks %}
+                            <a href="/{{ team_id }}/tasks/{{ task['id'] }}">
+                                <div class="task">
+                                    <div class="flex flexrow flexstart taskheader">
+                                        <h2 class="title">{{ task['name'] }}</h2>
+                                        <h2> | </h2>
+                                        <h2 class="points">{{ task['points'] }} Points</h2>
+                                    </div>
+                                    <p class="description">{{ task['description'] }}</p>
+                                </div>
+                            </a>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <h2>You've completed all the tasks! Head back to the start and wait!</h2>
+                {% endif %}
+            {% endif %}
+        </div>
+    </body>
+</html>

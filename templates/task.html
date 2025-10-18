@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>PSP Hunt</title>
+        <link rel="stylesheet" href="{{ url_for( 'static', filename='style.css') }}">
+    </head>
+    <body>
+        {% if task %}
+        <div class="header">
+            <h1>{{ task["name"] }}</h1>
+            <h2>{{ task["points"] }} Points</h2>
+        </div>
+        <div class="mainarea">
+            {% if submission_failed %}
+                <h1>Submission Failed... Try again</h1>
+            {% endif %}
+            <p>{{ task["description"] }}</p>
+            <form action="/{{ team_id }}/submit/{{ task['id'] }}" enctype="multipart/form-data" method="POST">
+                <label class="font-50">Submission</label>
+                <input class="font-50" sytle="width: 100px; height: 50px" type="file" name="submission" />
+                <input class="font-50" type="submit" value="Submit!" />
+            </form>
+        </div>
+        {% endif %}
+    </body>
+</html>

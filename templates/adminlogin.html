@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>PSP Hunt</title>
+        <link rel="stylesheet" href="{{ url_for( 'static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <h1>PSP Hunt</h1>
+        </div>
+        <div class="linkrow flex flexrow flexaround">
+            <a href="/">Home</a>
+            <a href="/scoreboard">Scoreboard</a>
+            <a href="/admin">Admin</a>
+        </div>
+        <div class="mainarea">
+            <h1 class="center-text">Admin Login</h1>
+            <form action="/admin/verification" method="post" class="signups">
+                <label>Username</label>
+                <input name="username" type="text" placeholder="Agent S.">
+                <label>Password</label>
+                <input name="password" type="password" placeholder="Password12345!">
+                <input type="submit" value="Login!" />
+            </form>
+            {% if login_failed %}
+                <div class="warning">
+                    <h2>Login failed...</h2>
+                </div>
+            {% endif %}    
+        </div>
+    </body>
+</html>
