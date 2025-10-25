@@ -23,6 +23,9 @@ def index():
         team_name = request.form["teamname"]
         if team_name == "":
             return render_template("index.html", teams=game1.get_team_names(), invalid_teamname=True)
+        if team_name in game1.get_team_names():
+            team_id = game1.get_team_id(team_name)
+            return redirect( "/" + str(team_id) )    
         game1.add_team(Team(team_name))
         team_id = game1.get_team_id(team_name)
         return redirect( "/" + str(team_id) )
