@@ -16,8 +16,8 @@
             <p>{{ task["description"] }}</p>
             <form action="/{{ team_id }}/submit/{{ task['id'] }}" enctype="multipart/form-data" method="POST">
                 <label class="font-50">Submission</label>
-                <input class="font-50" sytle="width: 100px; height: 50px" type="file" name="submission" />
-                <input class="font-50" type="submit" value="Submit!" />
+                <input class="font-50 file_submission" sytle="width: 100px; height: 50px" type="file" name="submission" />
+                <br><input class="font-50" type="submit" value="Submit!" />
             </form>
         </div>
         {% endif %}
