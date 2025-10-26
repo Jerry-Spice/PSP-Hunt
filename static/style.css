@@ -338,3 +338,15 @@ a {
             border-radius: 5px;
             text-align: center;
         }
+  
+.join_team {
+  font-size: 50px;
+
+}
+
+.join_team input {
+  font-size: 50px;
+  border: solid 5px black;
+  border-radius: 10px;
+  padding: 20px;
+}

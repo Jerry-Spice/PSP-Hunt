@@ -17,29 +17,47 @@
                 <div class="flex flexcol menucol">
                     <h1 class="center-text">Lobby</h1>
                     {% if teams %}
+                        {% set id = 0 %}
                         <h2 class="nopadding nomargin">Teams</h2>
                         <ol>
                             {% for team in teams %}
                                 <li>
+                                    <div class="flex flexrow flexaround">
                                     {% if current_team_name == team and game_running %}
                                     <a class="tasklink" href="/{{ team_id }}/tasks">
                                     {% endif %}
-                                    <p>{{ team }}</p>
+                                    <p>
+                                        {% if current_team_name == team  %}
+                                        <em>
+                                        {% endif %}
+                                            {{ team }}
+                                        {% if current_team_name == team  %}
+                                        </em>
+                                        {% endif %}
+                                    </p>
                                     {% if current_team_name == team and game_running %}
                                     </a>
+                                    
                                     {% endif %}
+                                    {% if current_team_name is not defined %}
+                                    <form action="/{{ id }}" method="post" class="join_team">
+                                    <input type="submit" value="Join" />
+                                    </form>
+                                    {% endif %}
+                                    </div>
                                 </li>
+                                {% set id = id + 1 %}
                             {% endfor %}
                         </ol>
                     {% endif %}
                 </div>
                 {% if not team_id %}
                 <div class="flex flexcol menucol">
-                    <h1 class="center-text">Join</h1>
+                    <h1 class="center-text">Create Team</h1>
                     <form action="/" method="post" class="signups">
                         <label>Team Name</label>
-                        <input name="teamname" type="text" placeholder="Agent S">
-                        <input type="submit" value="Join!" />
+                        <input name="teamname" type="text" placeholder="Team Name...">
+                        <input type="submit" value="Create!" />
                     </form>
                     {% if invalid_teamname %}
                         <div class="warning center-text">
